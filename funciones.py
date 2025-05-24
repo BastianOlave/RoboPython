@@ -1,6 +1,14 @@
-cursos={} #Diccionario para almacenar los cursos
+# Codigo con las funciones para el control de asistencia de clases y usar con main.py
+# Bastian Olave Lagos
 
+#Diccionario para almacenar los cursos
+cursos={} 
+
+# Se crea una clase para almacenar los metodos
 class funciones:
+
+    # A continuacion se definen los metodos para agregar cursos, alumnos y asistencia
+    # y para ver el porcentaje de asistencia
 
     def agregar_curso(self):
         nombre = input("Ingresa el nombre del curso: ").strip().title()

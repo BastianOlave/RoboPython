@@ -1,8 +1,16 @@
+# Codigo main para el control de asistencia de clases
+# Bastian Olave Lagos
+
 from os import system
 from funciones import *
 
+
+# func es una instancia de la clase funciones
+# que contiene todos los metodos para el control de asistencia
 func=funciones()
 
+
+# Se crea un bucle infinito con el menu
 while True:
         try:
             system('cls')
