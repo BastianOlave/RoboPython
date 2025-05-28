@@ -3,6 +3,7 @@
 
 from os import system
 from funciones import *
+from time import sleep
 
 
 # func es una instancia de la clase funciones
@@ -15,7 +16,7 @@ while True:
         try:
             system('cls')
             print("\n\t\t\t\t\t\tControl de Asistencia de Clases")
-            opcion=int(input("Ingresa una opción:\n\n"
+            opcion=int(input("Ingresa una opción:\n"
                      "1) Agregar Curso\n"
                      "2) Agregar Alumno\n"
                      "3) Marcar Asistencia\n"
@@ -31,12 +32,14 @@ while True:
             elif opcion==4:
                  func.ver_porcentaje_asistencia()
             elif opcion==5:
-                input("Saliendo del sistema...")
+                print("Saliendo del sistema...")
+                sleep(1.5)
+                system('cls')
                 break
             else:
-                 input("Por favor, ingresa una de las opciones")
+                 print("Por favor, ingresa una de las opciones")
         except ValueError:
-             input("Por favor, ingrese un numero del 1 al 5.")
+             print("Por favor, ingrese un numero del 1 al 5.")
 
 
 
